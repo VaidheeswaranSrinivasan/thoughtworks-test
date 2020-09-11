@@ -11,11 +11,6 @@
     state: started
     enabled: yes
 
-- name: "Create a database"
-  mysql_db:
-    name: wikidatabase
-    state: present
-
 - name: "Download the mediawiki application tarball"
   unarchive:
     src: "{{ application_url }}"
