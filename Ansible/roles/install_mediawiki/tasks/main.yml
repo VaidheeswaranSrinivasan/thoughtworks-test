@@ -28,11 +28,11 @@
 #     group: apache
 #     state: link
 
-# - name: "Start the HTTPD"
-#   service:
-#     name: httpd
-#     state: started
-#     enabled: yes
+- name: "Start the HTTPD"
+  service:
+    name: httpd
+    state: started
+    enabled: yes
 
 # - name: "Configure the apache httpd conf file"
 #   template:
